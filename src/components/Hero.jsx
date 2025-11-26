@@ -1,3 +1,4 @@
+import React from "react";
 export default function Hero() {
   return (
     <section className="min-h-[60vh] flex flex-col justify-center items-center bg-boltsRed text-boltsWhite">

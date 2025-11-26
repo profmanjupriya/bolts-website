@@ -1,3 +1,4 @@
+import React from "react";
 export default function About() {
   return (
     <section className="py-16 px-4 text-center bg-boltsBlack text-boltsWhite">

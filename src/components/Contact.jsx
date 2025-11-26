@@ -1,3 +1,4 @@
+import React from "react";
 export default function Contact() {
   return (
     <section className="py-16 px-4 bg-boltsRed text-boltsWhite text-center">

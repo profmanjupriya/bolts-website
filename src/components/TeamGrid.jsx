@@ -1,3 +1,4 @@
+import React from "react";
 const aTeam = [
   { name: "A1", role: "Builder", img: "" },
   { name: "A2", role: "Programmer", img: "" },

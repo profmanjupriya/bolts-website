@@ -16,7 +16,7 @@ export default function GalleryCarousel() {
     <section id="gallery" className="py-16 px-4 bg-boltsBlack">
       <h2 className="text-2xl font-bold text-boltsWhite mb-6 text-center">Gallery</h2>
       <div className="flex flex-col items-center">
-        <div className="relative w-[400px] h-[200px] rounded-lg border-2 border-gray-700 shadow-lg overflow-hidden">
+        <div className="relative w-full max-w-[400px] aspect-[2/1] rounded-lg border-2 border-gray-700 shadow-lg overflow-hidden">
           <img
             src={placeholders[current].img}
             alt={placeholders[current].caption}

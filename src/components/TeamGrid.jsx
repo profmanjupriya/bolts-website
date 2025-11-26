@@ -24,7 +24,7 @@ function TeamMembersGrid({ members, title }) {
           <div key={i} className="flex flex-col items-center p-4 rounded-lg border border-gray-200 shadow-md bg-white">
             <div className="w-16 h-16 bg-boltsBlack text-boltsWhite rounded-lg flex items-center justify-center mb-2 animate-fadeIn shadow-sm">
               {m.img ? (
-                <img src={m.img} alt={m.name} className="w-full h-full rounded-full object-cover" />
+                <img src={m.img} alt={m.name} className="w-full h-full rounded-lg object-cover" />
               ) : (
                 <span className="font-bold text-lg">{m.name}</span>
               )}

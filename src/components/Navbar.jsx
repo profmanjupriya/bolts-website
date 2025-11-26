@@ -21,9 +21,16 @@ export default function Navbar() {
 
   const handleClick = (e, href) => {
     e.preventDefault();
-    const target = document.querySelector(href);
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
+    if (!href || !href.startsWith('#')) {
+      return;
+    }
+    try {
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    } catch {
+      // Invalid selector, ignore
     }
   };
 

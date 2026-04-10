@@ -5,7 +5,9 @@ import Hero from './components/Hero'
 import About from './components/About'
 import TeamGrid from './components/TeamGrid'
 import GalleryCarousel from './components/GalleryCarousel'
+import GalleryPage from './components/GalleryPage'
 import Contact from './components/Contact'
+import ContactForm from './components/ContactForm'
 import WhimsicalPage from './components/WhimsicalPage'
 
 function HomePage() {
@@ -13,10 +15,16 @@ function HomePage() {
     <main className="bg-boltsWhite font-sans min-h-screen scroll-smooth">
       <Navbar />
       <Hero />
-      <About />
-      <TeamGrid />
       <GalleryCarousel />
-      <Contact />
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div>
+          <TeamGrid />
+        </div>
+        <div>
+          <About />
+          <Contact />
+        </div>
+      </div>
     </main>
   );
 }
@@ -26,7 +34,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/whimsical" element={<WhimsicalPage />} />
+        <Route path="/ContactForm" element={<ContactForm />} />
       </Routes>
     </Router>
   );

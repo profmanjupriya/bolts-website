@@ -11,6 +11,10 @@ import Robin5 from "../assets/team/Robin5.png";
 import Robin6 from "../assets/team/Robin6.png";
 import Robin7 from "../assets/team/Robin7.png";
 import Robin8 from "../assets/team/Robin8.png";
+import Robin9 from "../assets/team/Robin9.png";
+import Robin10 from "../assets/team/Robin10.png";
+import Robin11 from "../assets/team/Robin11.png";
+import Robin12 from "../assets/team/Robin12.png";
 
 const batCrew =
 [
@@ -23,6 +27,10 @@ const batCrew =
   { name: "Robin 6", img: Robin6 },
   { name: "Robin 7", img: Robin7 },
   { name: "Robin 8", img: Robin8 },
+  { name: "Robin 9", img: Robin9 },
+  { name: "Robin 10", img: Robin10 },
+  { name: "Robin 11", img: Robin11 },
+  { name: "Robin 12", img: Robin12 },
 ];
 
 function TeamMembersGrid({ members, title, isSpinning })

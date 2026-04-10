@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import teambuilding1 from "../assets/gallery/teamBuilding1.jpg";
 import teambuilding2 from "../assets/gallery/teamBuilding2.jpg";
@@ -20,7 +21,7 @@ export default function GalleryCarousel() {
     <section id="gallery" className="py-16 px-4 bg-boltsBlack">
       <h2 className="text-2xl font-bold text-boltsWhite mb-6 text-center">Gallery</h2>
       <div className="flex flex-col items-center">
-        <div className="relative w-full max-w-[400px] aspect-[2/1] rounded-lg border-2 border-gray-700 shadow-lg overflow-hidden">
+        <div className="relative w-full max-w-2xl aspect-video rounded-lg border-2 border-gray-700 shadow-lg overflow-hidden">
           <img
             src={placeholders[current].img}
             alt={placeholders[current].caption}
@@ -39,6 +40,9 @@ export default function GalleryCarousel() {
           >〉</button>
         </div>
         <p className="mt-4 text-boltsWhite">{placeholders[current].caption}</p>
+        <Link to="/gallery" className="mt-6 px-6 py-2 bg-boltsRed text-boltsWhite font-bold rounded hover:bg-red-700 transition">
+          View Full Gallery
+        </Link>
       </div>
     </section>
   );

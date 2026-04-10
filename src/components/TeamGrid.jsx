@@ -21,6 +21,10 @@ import Member5 from "../assets/team/Jesus.png";
 import Member6 from "../assets/team/Nathan.png";
 import Member7 from "../assets/team/Zachary.png";
 import Member8 from "../assets/team/Alexus.png";
+import Member9 from "../assets/team/Alan.png";
+import Member10 from "../assets/team/Chris.png";
+import Member11 from "../assets/team/Melaine.png";
+import Member12 from "../assets/team/Munazza.png";
 
 const actualMembers = 
 [
@@ -33,8 +37,10 @@ const actualMembers =
   { name: "Nathan", img: Member6 },
   { name: "Zachary", img: Member7 },
   { name: "Alexus", img: Member8 },
-  { name: "Melaine", img: null },
-  { name: "Munazza", img: null },
+  { name: "Alan", img: Member9 },
+  { name: "Chris", img: Member10 },
+  { name: "Melaine", img: Member11 },
+  { name: "Munazza", img: Member12 },
 ];
 
 const batCrew = 
@@ -139,7 +145,7 @@ export default function TeamGrid()
       className="py-16 px-4 bg-boltsWhite text-boltsBlack space-y-5"
       ref={sectionRef}
     >
-      <h2 className="text-2xl font-bold text-boltsBlack mb-8 text-center">
+      <h2 className="text-4xl font-bold text-boltsBlack mb-8 text-center">
         Meet the Team
       </h2>      
       <TeamMembersGrid
